@@ -14,12 +14,12 @@ namespace Sumar.Controllers
         [HttpGet]
         public int Add(int a,int b)
         {
-            return a + b;
+            return (a + b);
         }
         [HttpPost]
         public int Add2([FromHeader]int a,[FromHeader] int b)
         {
-            return a + b;
+            return (a + b);
         }
     }
 }
