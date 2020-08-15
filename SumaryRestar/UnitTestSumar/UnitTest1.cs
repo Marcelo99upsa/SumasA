@@ -34,12 +34,42 @@ namespace UnitTestSumar
             int esperado = -9;
 
             //Act
-            int resultado = sumaController.Add(a, b);
+            int resultado = sumaController.Add2(a, b);
 
             //Asset
             Assert.AreEqual(esperado, resultado);
+        }
 
+        [TestMethod]
+        public void TestProduct()
+        {
+            //Arrange
+            SumaController sumaController = new SumaController();
+            int a = 2;
+            int b = 5;
+            int esperado = 10;
 
+            //Act
+            int resultado = sumaController.Product(a, b);
+
+            //Asset
+            Assert.AreEqual(esperado, resultado);
+        }
+
+        [TestMethod]
+        public void TestProduct2()
+        {
+            //Arrange
+            SumaController sumaController = new SumaController();
+            int a = 4;
+            int b = 4;
+            int esperado = 16;
+
+            //Act
+            int resultado = sumaController.Product2(a, b);
+
+            //Asset
+            Assert.AreEqual(esperado, resultado);
         }
 
 
